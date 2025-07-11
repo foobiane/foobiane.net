@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foobiane.net</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div class="content">
+      <div id="header"><script src="header.js"></script></div>
+      <main>
+        <p class="code-disclaimer">Note: All of the code for my projects is freely available on my <a href="https://github.com/foobiane">GitHub</a>.</p>
+        <article class="article-brief">
+          <div class="article-info-code">
+            <h2>PedalJUCE</h2>
+            <p><i>Date:</i> May 2025 - Ongoing</p>
+            <p><i>Description:</i> PedalJUCE is a JUCE-powered digital guitar pedal emulator VST and standalone application. The goal of this project is to provide users with a free library of common guitar pedal effects that can be used in live performance scenarios.</p>
+            <p><i>Desired features:</i></p>
+            <ul>
+              <li>GUI workspace for connecting and modifying pedals, including their parameters (e.g., tone knobs)</li>
+              <li>Diverse collection of pedal modules, including classic guitar effects pedals (e.g., distortion, tremolo) and new effects made possible via DSP (e.g., convolution)</li>
+              <li>Preset system for both pedals and pedal arrangements</li>
+              <li>Control via external devices and a context selection system (e.g., MIDI knobs control a selected pedal knob)</li>
+              <li>Simple stereo IO system that hooks into and interacts with system IO</li>
+              <li>Low latency processing</li>
+              <li>Support for deployment into a Raspberry Pi system for live performance use</li>
+              <li>Application for constructing and generating GUI code for pedals graphically</li>
+            </ul>
+            
+            <p class="tags-text">tags: juce, cpp, plugin, guitar, pedals</p>
+          </div>
+        </article>
+        
+        <article class="article-brief">
+          <div class="article-info-code">
+            <h2>converb~</h2>
+            <p><i>Date:</i> February - May 2025</p>
+            <p><i>Description:</i> converb~ is an unpartitioned convolution reverb external for Pure Data coded in C. This project was created as part of my capstone presentation for my undergrad at UIUC.</p>
+            <p><i>Features:</i></p>
+            <ul>
+              <li>Convolves input signals with a fixed-length impulse response (read using tabread~)</li>
+              <li>Uses windowing to minimize clicks created from convolution</li>
+              <li>Uses estimated FFTs from the FFTW3 library to efficiently perform convolution in pseudo real time</li>
+              <li>Detailed help file (converb~-help.pd) that explains how to use converb~</li>
+            </ul>
+            <p><i>Areas for improvement:</i></p>
+            <ul>
+              <li>Use partitioning to reduce IR delay</li>
+              <li>Use a more sophisticated vector multiplication algorithm to speed up the convolution step. This could consist of SIMD and/or alignment tricks in C</li>
+              <li>Investigate if FFTW plans can be saved and reused in the object proper</li>
+            </ul>
+            
+            <p class="tags-text">tags: pure-data, c, convolution, convolution-reverb, fftw3, external</p>
+          </div>
+        </article>
+      </main>
+      <div id="footer"><script src="footer.js"></script></div>
+    </div>
+  </body>
+</html>
+
